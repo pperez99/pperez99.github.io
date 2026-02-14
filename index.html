@@ -5,766 +5,278 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pilar Pérez - Resume</title>
+  <title>Pilar Pérez | Data & Analytics</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/avatar-5.png" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+<main>
 
-  <main>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
 
-    <!--
-      - #SIDEBAR
-    -->
+    <div class="sidebar-info" style="text-align:center;">
 
-    <aside class="sidebar" data-sidebar>
+      <figure class="avatar-box">
+        <img src="./assets/images/Pilar_Profile.png" alt="Pilar Pérez">
+      </figure>
 
-      <div class="sidebar-info">
+      <h1 class="name">Pilar Pérez</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/Pilar_Profile.png" alt="Pilar Pérez" width="80">
-        </figure>
+      <p class="title">Data Analytics & Business Intelligence</p>
 
-        <div class="info-content">
-          <h1 class="name" title="Pilar Pérez">Pilar Pérez</h1>
+      <div class="separator"></div>
 
-          <p class="title">Data Scientist</p>
-        </div>
+      <ul class="contacts-list">
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:pilarperezpiedra@gmail.com" class="contact-link">pilarperezpiedra@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birth of Date</p>
-
-              <time datetime="1982-06-23">06/04/1999</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Madrid, Spain</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://es.linkedin.com/in/pilar-p%C3%A9rez-piedra-5b41aa1bb" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+        <li class="contact-item">
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:pilarperezpiedra@gmail.com" class="contact-link">
+              pilarperezpiedra@gmail.com
             </a>
-          </li>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Madrid, Spain</address>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="separator"></div>
+
+      <ul class="social-list" style="justify-content:center;">
+        <li>
+          <a href="https://es.linkedin.com/in/pilar-p%C3%A9rez-piedra-5b41aa1bb"
+             class="social-link" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </aside>
 
 
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
 
-        </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><button class="navbar-link active" data-nav-link>Profile</button></li>
+        <li><button class="navbar-link" data-nav-link>Foundations</button></li>
+        <li><button class="navbar-link" data-nav-link>Experience & Impact</button></li>
+        <li><button class="navbar-link" data-nav-link>Beyond</button></li>
+        <li><button class="navbar-link" data-nav-link>Let’s Connect</button></li>
+      </ul>
+    </nav>
+
+
+    <!-- PROFILE -->
+    <article class="active" data-page="profile">
+
+      <h2 class="article-title">Profile</h2>
+
+      <div class="about-text">
+
+        <p>
+          I am a data-driven professional with a strong quantitative background in
+          Physics and Mathematics, currently completing a Master’s degree in Big Data Analytics.
+        </p>
+
+        <p>
+          My work focuses on transforming complex datasets into structured insights
+          that support strategic and business decision-making.
+        </p>
+
+        <p>
+          I enjoy operating at the intersection of analytics, finance and business,
+          combining technical rigor with real-world impact.
+        </p>
 
       </div>
 
-    </aside>
+      <div class="service">
+        <h3 class="service-title">Core Expertise</h3>
 
-    <!--
-      - #main-content
-    -->
+        <ul class="service-list">
 
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About me</button>
+          <li class="service-item">
+            <h4 class="service-item-title">Data Analysis</h4>
+            <p class="service-item-text">
+              Python · SQL · R · Data Modeling · Time Series · Forecasting
+            </p>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Experience</button>
+          <li class="service-item">
+            <h4 class="service-item-title">Data Visualization</h4>
+            <p class="service-item-text">
+              Power BI · Shiny · Dashboard Design · KPI Monitoring
+            </p>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+          <li class="service-item">
+            <h4 class="service-item-title">Business Intelligence</h4>
+            <p class="service-item-text">
+              Performance Analysis · Financial Data · Strategic Reporting
+            </p>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+          <li class="service-item">
+            <h4 class="service-item-title">Quantitative Foundation</h4>
+            <p class="service-item-text">
+              Strong mathematical modeling and analytical reasoning applied to real data problems.
+            </p>
           </li>
 
         </ul>
-
-      </nav>
-
-
-      <!--
-        - #About
-      -->
-
-      <article class="about  active" data-page="acerca de mí">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am an ambitious, responsible, dedicated, sport-loving and forward-thinking person. 
-            Nowadays, I have moved to Madrid to do a Master's degree in Big Data Analytics at the Carlos III University and to work in the city.
-          </p>
-
-          <p>
-            Day by day I seek to increase and improve my knowledge of Data Analytics, Finance and the Business Sector. 
-            In addition, I constantly participate in events, which allow me to get out of my comfort zone and meet people with very diverse backgrounds.
-          </p>
-
-          <p>
-            On a work experience point of view, after two summers working as a lifeguard (a curious experience to say at least), I have a year of practical experience in the field of Data Analysis.
-            In this one, I have actively contributed to real-world projects, improving my skills in data analysis, visualisation and implementation of strategies based on information processing.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I know to do</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icono11.png
-        
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Analysis</h4>
-
-                <p class="service-item-text">
-                  Competence in handling and analyzing data using tools like SQL, R, and Python. Currently training in Cloud tools, Apache Spark and MongoDB.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Quantitative Skills</h4>
-
-                <p class="service-item-text">
-                  Proficiency in managing financial data using tools like Excel, R, etc.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icono22.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Visualization</h4>
-
-                <p class="service-item-text">
-                  Experience in creating Dashboards in Power BI and ShinyApps, among others.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icono33.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Soft Skills</h4>
-
-                <p class="service-item-text">
-                  Ability to work in a team, public speaking, adaptability, and problem-solving.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <!--
-          - testimonials
-        -->
-
-      
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/profile_pic_taman.png" alt="David Cayuela" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>David Cayuela</h4>
-
-              <time datetime="2021-06-14">2024</time>
-
-              <div data-modal-text>
-                <p>
-                  Texto a poner de David Cayuela.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-      </section>
+      </div>
 
     </article>
 
-      <!--
-        - #RESUME
-      -->
 
-      <article class="resume" data-page="experience">
+    <!-- FOUNDATIONS -->
+    <article data-page="foundations">
 
-        <header>
-          <h2 class="h2 article-title">Life cycle</h2>
-        </header>
+      <h2 class="article-title">Quantitative Foundations</h2>
 
-        <section class="education">
+      <div class="timeline-list">
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
+        <div class="timeline-item">
+          <h4 class="timeline-item-title">
+            Master in Big Data Analytics – Universidad Carlos III
+          </h4>
+          <span>2024 – 2025</span>
+          <p class="timeline-text">
+            Advanced training in big data processing, distributed systems and machine learning.
+          </p>
+        </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+        <div class="timeline-item">
+          <h4 class="timeline-item-title">
+            Double Degree in Physics & Mathematics
+          </h4>
+          <span>Completed</span>
+          <p class="timeline-text">
+            Strong analytical and modeling foundation applied to quantitative problem-solving.
+          </p>
+        </div>
 
-          <ol class="timeline-list">
+        <div class="timeline-item">
+          <h4 class="timeline-item-title">
+            Certifications & Ongoing Learning
+          </h4>
+          <p class="timeline-text">
+            Continuous training in finance, cloud technologies and advanced analytics tools.
+          </p>
+        </div>
 
-            <li class="timeline-item">
+      </div>
 
-              <h4 class="h4 timeline-item-title">Universidad Carlos III - Master in Big Data Analytics</h4>
+    </article>
 
-              <span>2024 - July 2025</span>
 
-              <p class="timeline-text">
-                This Master's program allows me to go deeper into the world of Big Data, exploring what can be achieved with it. I am also learning new programming languages such as Hadoop, Apache Spark, and Java. This program is conducted entirely in English.
-              </p>
+    <!-- EXPERIENCE -->
+    <article data-page="experience & impact">
 
-            </li>
+      <h2 class="article-title">Experience & Impact</h2>
 
-            <li class="timeline-item">
+      <div class="timeline-list">
 
-              <h4 class="h4 timeline-item-title">Universidad de Valencia - Degree in Business Intelligence & Analytics</h4>
+        <div class="timeline-item">
+          <h4 class="timeline-item-title">Data Analyst</h4>
+          <span>2022 – Present</span>
+          <p class="timeline-text">
+            Developed dashboards and analytical models to support business decisions.
+            Automated reporting processes and improved performance tracking systems.
+          </p>
+        </div>
 
-              <span>2020 — 2024</span>
+        <div class="timeline-item">
+          <h4 class="timeline-item-title">Business & Data Projects</h4>
+          <p class="timeline-text">
+            Worked on real-world datasets applying statistical analysis,
+            visualization and predictive modeling techniques.
+          </p>
+        </div>
 
-              <p class="timeline-text">
-                During my studies in Business Intelligence & Analytics, I discovered the fascinating world of data combined with business. Where I learned how data can feed business and vice versa to achieve outstanding results. This program gave me with valuable skills in Business Intelligence, Marketing, Business, Accounting, and Finance, helping me to understand business operations and make data-driven strategic decisions.
-              </p>
+      </div>
 
-            </li>
+    </article>
 
-            <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">VIVES Business Academy Bruges - Commercial Sciences, Business Management and Informatics</h4>
+    <!-- BEYOND -->
+    <article data-page="beyond">
 
-              <span>September 2022 - January 2023</span>
+      <h2 class="article-title">Beyond the Resume</h2>
 
-              <p class="timeline-text">
-                In September 2022, I continued my university studies in Belgium through the ERASMUS program. These six months completely transformed me as a person, allowing me to grow, understand other cultures, and improve my English. I also learned a broad range of marketing and finance techniques. Defenetly, a life-changing experience.
-              </p>
+      <div class="timeline-list">
 
-            </li>
+        <div class="timeline-item">
+          <h4 class="timeline-item-title">DataHub Hackathon – Google & Mercadona</h4>
+          <p class="timeline-text">
+            Built sales forecasting model with less than 1% deviation from real results.
+          </p>
+        </div>
 
-            <li class="timeline-item">
+        <div class="timeline-item">
+          <h4 class="timeline-item-title">Data4Good Festival – Berlin</h4>
+          <p class="timeline-text">
+            Delivered final pitch presenting a data-driven solution for social impact.
+          </p>
+        </div>
 
-              <h4 class="h4 timeline-item-title">ILTS Cambridge School - C1</h4>
+        <div class="timeline-item">
+          <h4 class="timeline-item-title">Entrepreneurship & Tech Events</h4>
+          <p class="timeline-text">
+            Active participation in hackathons, innovation events and finance conferences.
+          </p>
+        </div>
 
-              <span>2024</span>
+      </div>
 
-              <p class="timeline-text">
-                This year, I decided to take the English Level Certification exam to formally register my proficiency. My goal is to keep improving every day.
-              </p>
+    </article>
 
-            </li>
 
-            <li class="timeline-item">
+    <!-- CONTACT -->
+    <article data-page="let’s connect">
 
-              <h4 class="h4 timeline-item-title">Stock Market Course by JFPartners: Domina la bolsa</h4>
+      <h2 class="article-title">Let’s Connect</h2>
 
-              <span>In progress</span>
+      <p style="margin-top:20px; line-height:1.7;">
+        If you are interested in collaborating or discussing data-driven projects,
+        feel free to reach out.
+      </p>
 
-              <p class="timeline-text">
-                I am currently taking a Stock Market course that teaches me how to understand the market, analyze past trends, and make future predictions.
-              </p>
+      <p style="margin-top:15px;">
+        📩 pilarperezpiedra@gmail.com
+      </p>
 
-            </li>
+      <p>
+        🔗 <a href="https://es.linkedin.com/in/pilar-p%C3%A9rez-piedra-5b41aa1bb"
+              target="_blank" style="color:#4f8cff;">
+              LinkedIn Profile
+        </a>
+      </p>
 
-            <li class="timeline-item">
+    </article>
 
-              <h4 class="h4 timeline-item-title">Preparation for the European Financial Advisor (EFPA) Certification</h4>
+  </div>
 
-              <span>In progress</span>
+</main>
 
-              <p class="timeline-text">
-                This summer, I began preparing for the European Financial Advisor Certification, a key credential for my professional development in the financial sector. I believe this certification will provide a solid foundation of knowledge and skills, improving my understanding of financial markets. 
-              </p>
-
-            </li>
-
-
-          </ol>
-
-        </section>
-
-        <section class="events">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Events</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">DataHub Hackathon at EDEM</h4>
-
-              <span>January 2024</span>
-
-              <p class="timeline-text">
-                Marina de Empresas organized the first data hackathon in collaboration with Google and Mercadona. The challenge was to forecast Mercadona's sales for 2019 using time series data from 2013 to 2018. My role was Developer, working with Google Cloud tools like SQL, Python, Vertex, and Looker. We were thrilled with our prediction, which differed by less than 1% from the actual results.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Data4Good Festival in Berlin</h4>
-
-              <span>April 2024</span>
-
-              <p class="timeline-text">
-                The Data4Good Festival, organized in Berlin by the Hertie School, was a three-day event focused on harnessing data for impactful solutions. We participated the a hackathon, working on data-driven measures to address real-world challenges. The event included sessions with experts who provided valuable insights and guidance throughout. I had the responsibility of delivering the final pitch, presenting our project to an audience and judges, which was a rewarding experience to cap off the festival.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Valencia Digital Summit (VDS)</h4>
-
-              <span>2023</span>
-
-              <p class="timeline-text">
-                Valencia Digital Summit is a prominent event that brings together innovators, digital entrepreneurs, industry experts, and thought leaders in Valencia, Spain. I attended as a participant, joining numerous talks, visiting various stands showcasing the latest tech advancements, and connecting with brilliant people.
-              </p>
-
-            </li>
-          
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Hackio Hackathon</h4>
-
-              <span>February 2024</span>
-
-              <p class="timeline-text">
-                The Hackathon organized by Hackio and ThePower was an intensive three-day event where we were tasked with developing a business proposal centered around a specific object, in this case, glasses. Throughout the hackathon, we refined our proposal using data insights to enhance its value and viability. This iterative approach allowed us to adapt and strengthen our idea progressively, making for a dynamic and challenging experience. Obtaining the victory at the Hackathon.
-              </p>
-
-            </li>
-
-            
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">STARS Entrepreneurship Hackathon</h4>
-
-              <span>2023</span>
-
-              <p class="timeline-text">
-                The entrepreneurship hackathon is a three-day event organized by STARS, a company that supports entrepreneurship and accelerates startups.
-              </p>
-              <p class="timeline-text">
-                My role was CTO of my group, where, along with my teammates, we developed an idea from scratch and presented it to a jury. Mentors also guided and motivated us with their insights.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">ForInvest</h4>
-
-              <span>2024</span>
-
-              <p class="timeline-text">
-                ForInvest is a major event in Economics, Finance, and Insurance, where I had the chance to attend conferences, debates, and round tables with prominent experts. This experience deepened my knowledge of current topics in finance, economics, insurance, fintech, and insurtech innovations. It was invaluable for expanding my knowledge and strengthening my professional network, essential for my goal of working in the banking sector.
-              </p>
-
-            </li>
-            
-
-          </ol>
-
-        </section>
-
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Analysis</h5>
-                <data value="80">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Business Intelligence</h5>
-                <data value="85">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Economy and Business</h5>
-                <data value="75">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Ambition</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-
-            <li class="filter-item">
-              <button data-filter-btn>Bachelor's Thesis</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>WebScraping</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-
-              <li class="select-item">
-                <button data-select-item>Bachelor's Thesis</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>WebScraping</button>
-              </li>
-
-  
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-                    
-<li class="project-item active" data-filter-item data-category="bachelor's Thesis">
-              <a href="https://drive.google.com/file/d/1BqddIzay44XBS5z85QjJeCGwATVNh9DU/view?usp=sharing">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/tfg.png" alt="Análisis de emociones y sentimientos de preguntas abiertas en encuestas" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Análisis de emociones y sentimientos de preguntas abiertas en encuestas</h3>
-            
-                <p class="project-category">R</p>
-            
-              </a>
-            </li>
-            
-            <li class="project-item active" data-filter-item data-category="webscraping">
-              <a href="https://drive.google.com/file/d/14kTlJ-GllEeqGb7FdkLlAUuBCIG9oLQ_/view?usp=sharing">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/webscraping.png" alt="Webscrapping y clustering aplicado a la liga española" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Webscrapping y clustering aplicado a la liga española</h3>
-            
-                <p class="project-category">R</p>
-            
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Documents</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://drive.google.com/file/d/16HoJwpaR6xgTsUYpRuxP8krFmy7FV2oD/view?usp=sharing">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/curriculum.png" alt="Mi Currículum" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Resume</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-07-23">November, 2024</time>
-                  </div>
-
-                  <p class="blog-text">
-                    View my CV in PDF format.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #CONTACT
-      -->
-    
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-      
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194348.23369080859!2d-3.8443456760218373!3d40.437837282793765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1728080579857!5m2!1ses!2ses"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-      
-      
-      </article>
-      
-      
-      </script>
-      
-            
-  </main>
-
-  
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </body>
-
 </html>
