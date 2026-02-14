@@ -140,20 +140,26 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+// navigation logic mejorada
+navigationLinks.forEach(link => {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
+  link.addEventListener("click", function () {
+
+    const targetPage = this.getAttribute("data-page");
+
+    // quitar active a todos
+    navigationLinks.forEach(btn => btn.classList.remove("active"));
+    pages.forEach(page => page.classList.remove("active"));
+
+    // activar botón actual
+    this.classList.add("active");
+
+    // mostrar página correspondiente
+    document.querySelector(`[data-page="${targetPage}"]`)
+      .classList.add("active");
+
+    window.scrollTo(0, 0);
 
   });
-}
+
+});
