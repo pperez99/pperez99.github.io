@@ -419,13 +419,15 @@ article.active {
 
   position: absolute;
 
-  left: 20px;        /* ← EXACTAMENTE IGUAL QUE LA LINEA */
+  left: 20px;          /* mismo valor que la linea */
 
   top: 12px;
 
-  margin-left: -5px; /* ← centra markers pequeños */
+  transform: translateX(-50%);  /* ← centra SIEMPRE sin importar tamaño */
 
   border-radius: 50%;
+
+  z-index: 2;
 
 }
 
@@ -436,8 +438,6 @@ article.active {
 
   width: 16px;
   height: 16px;
-
-  margin-left: -8px; /* mitad del tamaño */
 
   background: var(--accent);
 
@@ -454,8 +454,6 @@ article.active {
 
   width: 10px;
   height: 10px;
-
-  margin-left: -5px;
 
   background: rgba(79,140,255,0.6);
 
