@@ -384,7 +384,7 @@ article.active {
 
   position: absolute;
 
-  left: 0;
+  left: 18px;
 
   top: 0;
 
@@ -418,9 +418,9 @@ article.active {
 
   position: absolute;
 
-  left: -50px;
+  left: -42px;
 
-  top: 6px;
+  top: 8px;
 
   border-radius: 50%;
 
