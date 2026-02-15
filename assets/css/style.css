@@ -389,9 +389,10 @@ article.active {
 
   top: 0;
 
+  bottom: 0;
+
   width: 2px;
 
-  height: 100%;
 
   background: linear-gradient(
     to bottom,
@@ -421,7 +422,7 @@ article.active {
 
   left: 20px;          /* mismo valor que la linea */
 
-  top: 12px;
+  top: 14px;
 
   transform: translateX(-50%);  /* ← centra SIEMPRE sin importar tamaño */
 
@@ -464,7 +465,7 @@ article.active {
 
 .timeline-content {
 
-  margin-left: 20px;
+  margin-left: 25px;
 
 }
 
