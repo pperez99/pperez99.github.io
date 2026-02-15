@@ -370,18 +370,14 @@ article.active {
 
 .timeline {
 
-  --axis: 35px;              /* ← EL EJE CENTRAL (SOLO CAMBIAS ESTO SI QUIERES AJUSTAR) */
-
   position: relative;
 
-  padding-left: 80px;        /* espacio para markers y contenido */
+  padding-left: 60px;
 
 }
 
 
-/* ========================= */
 /* LINEA VERTICAL */
-/* ========================= */
 
 .timeline::before {
 
@@ -389,15 +385,13 @@ article.active {
 
   position: absolute;
 
-  left: var(--axis);         /* ← usa la variable */
+  left: 20px;      /* ← POSICION FIJA DEL EJE */
 
   top: 0;
 
   width: 2px;
 
   height: 100%;
-
-  transform: translateX(-50%);   /* centra la linea EXACTAMENTE */
 
   background: linear-gradient(
     to bottom,
@@ -408,9 +402,7 @@ article.active {
 }
 
 
-/* ========================= */
-/* ITEM BASE */
-/* ========================= */
+/* ITEM */
 
 .timeline-item {
 
@@ -421,33 +413,31 @@ article.active {
 }
 
 
-/* ========================= */
-/* MARKER BASE */
-/* ========================= */
+/* MARKER BASE — PERFECTAMENTE ALINEADO */
 
 .timeline-marker {
 
   position: absolute;
 
-  left: var(--axis);         /* ← MISMA VARIABLE */
+  left: 20px;        /* ← EXACTAMENTE IGUAL QUE LA LINEA */
 
-  top: 10px;
+  top: 12px;
 
-  transform: translate(-50%, -50%);   /* centra PERFECTAMENTE */
+  margin-left: -5px; /* ← centra markers pequeños */
 
   border-radius: 50%;
 
 }
 
 
-/* ========================= */
-/* DEGREE (DESTACADO) */
-/* ========================= */
+/* MARKER DEGREE */
 
 .timeline-item.degree .timeline-marker {
 
   width: 16px;
   height: 16px;
+
+  margin-left: -8px; /* mitad del tamaño */
 
   background: var(--accent);
 
@@ -457,6 +447,31 @@ article.active {
 
 }
 
+
+/* MARKER CERT */
+
+.timeline-item.cert .timeline-marker {
+
+  width: 10px;
+  height: 10px;
+
+  margin-left: -5px;
+
+  background: rgba(79,140,255,0.6);
+
+}
+
+
+/* CONTENT */
+
+.timeline-content {
+
+  margin-left: 20px;
+
+}
+
+
+/* DEGREE CARD */
 
 .timeline-item.degree .timeline-content {
 
@@ -468,60 +483,25 @@ article.active {
 
   border-radius: 14px;
 
-  transition: 0.25s ease;
-
-}
-
-.timeline-item.degree .timeline-content:hover {
-
-  border-color: var(--accent);
-
-  transform: translateY(-2px);
-
 }
 
 
-/* ========================= */
-/* CERTIFICATIONS */
-/* ========================= */
-
-.timeline-item.cert .timeline-marker {
-
-  width: 10px;
-  height: 10px;
-
-  background: rgba(79,140,255,0.6);
-
-}
-
-
-.timeline-item.cert .timeline-content {
-
-  padding: 4px 0;
-
-}
-
-
-/* ========================= */
 /* HEADER INLINE */
-/* ========================= */
 
 .timeline-header {
 
   display: flex;
 
-  align-items: baseline;
-
   gap: 10px;
+
+  align-items: baseline;
 
   flex-wrap: wrap;
 
 }
 
 
-/* ========================= */
-/* TEXT STYLES */
-/* ========================= */
+/* TEXT */
 
 .timeline-date {
 
@@ -531,17 +511,7 @@ article.active {
 
   color: var(--accent);
 
-  white-space: nowrap;
-
 }
-
-
-.timeline-item.degree .timeline-date {
-
-  font-size: 15px;
-
-}
-
 
 .timeline-title {
 
@@ -551,24 +521,17 @@ article.active {
 
 }
 
-
 .timeline-item.degree .timeline-title {
 
   font-size: 20px;
 
-  margin-top: 6px;
-
 }
-
 
 .timeline-item.cert .timeline-title {
 
   font-size: 16px;
 
-  font-weight: 500;
-
 }
-
 
 .timeline-org {
 
@@ -576,31 +539,15 @@ article.active {
 
   color: var(--text-muted);
 
-  margin-top: 2px;
-
 }
-
 
 .timeline-description {
 
   font-size: 15px;
 
-  line-height: 1.6;
-
   margin-top: 8px;
 
   color: var(--text-secondary);
-
-}
-
-
-/* ========================= */
-/* LAST ITEM */
-/* ========================= */
-
-.timeline-item:last-child {
-
-  margin-bottom: 0;
 
 }
 
