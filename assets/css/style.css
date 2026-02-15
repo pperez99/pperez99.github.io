@@ -490,6 +490,13 @@ article.active {
 
 }
 
+.beyond-date {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
 .beyond-summary {
 
   font-size: var(--fs-small);
