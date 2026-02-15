@@ -371,7 +371,7 @@ article.active {
 
   position: relative;
 
-  padding-left: 60px;
+  padding-left: 50px;
 
 }
 
@@ -384,7 +384,7 @@ article.active {
 
   position: absolute;
 
-  left: 20px;   /* eje exacto de la linea */
+  left: 0;
 
   top: 0;
 
@@ -401,23 +401,24 @@ article.active {
 }
 
 
-/* ITEM */
+/* ITEM BASE */
 
 .timeline-item {
 
-  position: relative;   /* CRÍTICO */
+  position: relative;
+
   margin-bottom: 35px;
 
 }
 
 
-/* MARKER BASE */
+/* MARKER BASE (alineado perfectamente) */
 
 .timeline-marker {
 
   position: absolute;
 
-  left: -40px;   /* alineado con la linea */
+  left: -50px;
 
   top: 6px;
 
@@ -426,7 +427,9 @@ article.active {
 }
 
 
-/* DEGREE MARKER (GRANDE) */
+/* ========================= */
+/* DEGREE (DESTACADO) */
+/* ========================= */
 
 .timeline-item.degree .timeline-marker {
 
@@ -437,12 +440,37 @@ article.active {
 
   box-shadow:
     0 0 0 4px rgba(79,140,255,0.15),
-    0 0 12px rgba(79,140,255,0.4);
+    0 0 12px rgba(79,140,255,0.35);
 
 }
 
 
-/* CERT MARKER (PEQUEÑO) */
+.timeline-item.degree .timeline-content {
+
+  background: rgba(79,140,255,0.05);
+
+  border: 1px solid rgba(79,140,255,0.2);
+
+  padding: 20px 24px;
+
+  border-radius: 14px;
+
+  transition: 0.25s ease;
+
+}
+
+.timeline-item.degree .timeline-content:hover {
+
+  border-color: var(--accent);
+
+  transform: translateY(-2px);
+
+}
+
+
+/* ========================= */
+/* CERTIFICATIONS (COMPACTAS) */
+/* ========================= */
 
 .timeline-item.cert .timeline-marker {
 
@@ -454,89 +482,110 @@ article.active {
 }
 
 
-/* CONTENIDO BASE */
-
-.timeline-content {
-
-  margin-left: 10px;
-
-}
-
-
-/* DEGREE DESTACADO (RECUADRO) */
-
-.timeline-item.degree .timeline-content {
-
-  background: rgba(79,140,255,0.06);
-
-  border: 1px solid rgba(79,140,255,0.25);
-
-  padding: 20px;
-
-  border-radius: 14px;
-
-  transition: 0.25s ease;
-
-}
-
-
-/* HOVER PROFESIONAL */
-
-.timeline-item.degree .timeline-content:hover {
-
-  transform: translateY(-3px);
-
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-
-}
-
-
-/* CERT SIMPLE */
-
 .timeline-item.cert .timeline-content {
 
-  padding: 8px 0;
+  padding: 4px 0;
 
 }
 
 
-/* TEXTOS */
+/* Header inline (fecha + titulo en una linea) */
+
+.timeline-header {
+
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+}
+
+
+/* ========================= */
+/* TEXT STYLES */
+/* ========================= */
 
 .timeline-date {
-
-  color: var(--accent);
 
   font-size: 14px;
 
   font-weight: 500;
 
+  color: var(--accent);
+
+  white-space: nowrap;
+
 }
+
+
+.timeline-item.degree .timeline-date {
+
+  font-size: 15px;
+
+}
+
 
 .timeline-title {
 
-  color: white;
+  font-weight: 600;
+
+  color: var(--text-primary);
+
+}
+
+
+.timeline-item.degree .timeline-title {
 
   font-size: 20px;
 
-  font-weight: 600;
-
-  margin: 4px 0;
+  margin-top: 6px;
 
 }
+
+
+.timeline-item.cert .timeline-title {
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+}
+
 
 .timeline-org {
 
+  font-size: 14px;
+
   color: var(--text-muted);
 
-  margin-bottom: 6px;
+  margin-top: 2px;
 
 }
 
+
 .timeline-description {
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  margin-top: 8px;
 
   color: var(--text-secondary);
 
-  line-height: 1.6;
+}
+
+
+/* ========================= */
+/* LAST ITEM SPACING */
+/* ========================= */
+
+.timeline-item:last-child {
+
+  margin-bottom: 0;
 
 }
 
