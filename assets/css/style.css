@@ -363,15 +363,21 @@ article.active {
 }
 
 
-/* TIMELINE */
+/* ========================= */
+/* TIMELINE PROFESIONAL FIX  */
+/* ========================= */
 
 .timeline {
 
   position: relative;
 
-  padding-left: 30px;
+  margin-top: 40px;
+
+  padding-left: 40px;
 
 }
+
+/* LÍNEA VERTICAL */
 
 .timeline::before {
 
@@ -379,85 +385,63 @@ article.active {
 
   position: absolute;
 
-  left: 6px;
+  left: 12px;      /* Ajuste clave */
+
   top: 0;
-  bottom: 0;
 
   width: 2px;
 
-  background: linear-gradient(
-    to bottom,
-    var(--accent),
-    rgba(79,140,255,0.1)
-  );
+  height: 100%;
+
+  background: rgba(79,140,255,0.4); /* Más visible */
+
+  z-index: 0;      /* Asegura que esté detrás */
 
 }
+
+/* ITEM */
 
 .timeline-item {
 
   position: relative;
 
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 
 }
+
+/* CÍRCULO */
 
 .timeline-marker {
 
   position: absolute;
 
-  left: -30px;
-  top: 6px;
+  left: -40px;
+
+  top: 8px;
 
   width: 14px;
+
   height: 14px;
 
   border-radius: 50%;
 
   background: var(--accent);
 
-  box-shadow: 0 0 0 4px rgba(79,140,255,0.15);
+  box-shadow: 0 0 0 4px rgba(79,140,255,0.2);
+
+  z-index: 2; /* Encima de la línea */
 
 }
 
-.timeline-item.current .timeline-marker {
-
-  background: #00ffa6;
-
-  box-shadow: 0 0 0 6px rgba(0,255,166,0.15);
-
-}
-
-.timeline-item.highlight .timeline-marker {
-
-  background: #ffd166;
-
-  box-shadow: 0 0 0 6px rgba(255,209,102,0.15);
-
-}
+/* Texto */
 
 .timeline-date {
 
-  font-size: 13px;
-
-  color: var(--accent);
+  font-size: 14px;
 
   font-weight: 500;
 
-}
-
-.timeline-badge {
-
-  margin-left: 10px;
-
-  padding: 3px 8px;
-
-  font-size: 11px;
-
-  border-radius: 8px;
-
-  background: rgba(0,255,166,0.12);
-
-  color: #00ffa6;
+  color: var(--accent);
 
 }
 
@@ -469,7 +453,7 @@ article.active {
 
   color: var(--text-primary);
 
-  margin-top: 5px;
+  margin-top: 6px;
 
 }
 
@@ -479,7 +463,7 @@ article.active {
 
   color: var(--text-muted);
 
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 
 }
 
@@ -487,9 +471,9 @@ article.active {
 
   font-size: 15px;
 
-  line-height: 1.6;
-
   color: var(--text-secondary);
+
+  line-height: 1.6;
 
 }
 
