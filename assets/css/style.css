@@ -367,6 +367,9 @@ article.active {
 /* TIMELINE PROFESIONAL FINAL */
 /* ========================= */
 
+/* ========================= */
+/* TIMELINE DEFINITIVO */
+/* ========================= */
 
 .timeline {
 
@@ -374,7 +377,7 @@ article.active {
 
   display: grid;
 
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 60px 1fr;
 
   row-gap: 36px;
 
@@ -389,11 +392,10 @@ article.active {
 
   position: absolute;
 
-  left: 20px;
-
   top: 0;
-
   bottom: 0;
+
+  left: 30px;   /* EXACTAMENTE centro de columna 1 */
 
   width: 2px;
 
@@ -406,7 +408,7 @@ article.active {
 }
 
 
-/* ITEM usa GRID */
+/* ITEM */
 
 .timeline-item {
 
@@ -421,18 +423,16 @@ article.active {
 
   grid-column: 1;
 
-  justify-self: center;
-
-  align-self: start;
-
-  margin-top: 6px;
-
   width: 10px;
   height: 10px;
 
+  background: rgba(79,140,255,0.6);
+
   border-radius: 50%;
 
-  background: rgba(79,140,255,0.6);
+  justify-self: center;
+
+  margin-top: 6px;
 
   z-index: 2;
 
@@ -506,15 +506,11 @@ article.active {
 
 }
 
-
 .timeline-title {
 
   font-weight: 600;
 
-  color: var(--text-primary);
-
 }
-
 
 .timeline-item.degree .timeline-title {
 
@@ -522,13 +518,11 @@ article.active {
 
 }
 
-
 .timeline-item.cert .timeline-title {
 
   font-size: 16px;
 
 }
-
 
 .timeline-org {
 
@@ -539,7 +533,6 @@ article.active {
   margin-top: 4px;
 
 }
-
 
 .timeline-description {
 
