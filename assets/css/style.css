@@ -303,6 +303,85 @@ main {
 }
 
 
+/* ========================= */
+/* SKILLS SIDEBAR */
+/* ========================= */
+
+.skills-section {
+
+  margin-top: 10px;
+
+}
+
+.skills-title {
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  color: var(--text-muted);
+
+  margin-bottom: 12px;
+
+  text-align: center;
+
+}
+
+.skills-tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+}
+
+/* technical */
+
+.skill-tag {
+
+  font-size: 12px;
+
+  padding: 6px 12px;
+
+  border-radius: 10px;
+
+  background: rgba(79,140,255,0.12);
+
+  border: 1px solid rgba(79,140,255,0.25);
+
+  color: var(--accent);
+
+  transition: 0.2s ease;
+
+}
+
+.skill-tag:hover {
+
+  background: rgba(79,140,255,0.22);
+
+  transform: translateY(-2px);
+
+}
+
+/* soft skills más sutiles */
+
+.skill-tag.soft {
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: var(--text-secondary);
+
+}
 /* MAIN CONTENT */
 
 .main-content {
