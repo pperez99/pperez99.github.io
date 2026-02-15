@@ -35,7 +35,11 @@ function toggleCard(card) {
 
 }
 
-function openModal(title, text, image) {
+function openModalFromCard(card) {
+
+  const title = card.dataset.title;
+  const text = card.dataset.text;
+  const image = card.dataset.image;
 
   document.getElementById("modalTitle").innerText = title;
   document.getElementById("modalText").innerHTML = text;
