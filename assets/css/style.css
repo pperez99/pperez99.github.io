@@ -454,7 +454,8 @@ article.active {
 
 .timeline-icon.cert {
 
-  background: rgba(79,140,255,0.3);
+  background: #1b2a4a; /* azul oscuro sólido */
+  box-shadow: 0 0 0 4px rgba(79,140,255,0.08);
 
 }
 
