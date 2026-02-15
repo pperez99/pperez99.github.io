@@ -367,26 +367,18 @@ article.active {
 /* TIMELINE PROFESIONAL FINAL */
 /* ========================= */
 
-/* ========================= */
-/* TIMELINE DEFINITIVO */
-/* ========================= */
-
-.timeline {
+.timeline-centered {
 
   position: relative;
 
-  display: grid;
-
-  grid-template-columns: 60px 1fr;
-
-  row-gap: 36px;
+  margin-left: 20px;
 
 }
 
 
-/* LINEA VERTICAL */
+/* LINEA */
 
-.timeline::before {
+.timeline-centered::before {
 
   content: "";
 
@@ -395,148 +387,132 @@ article.active {
   top: 0;
   bottom: 0;
 
-  left: 30px;   /* EXACTAMENTE centro de columna 1 */
+  left: 20px;
 
   width: 2px;
 
   background: linear-gradient(
     to bottom,
     var(--accent),
-    rgba(79,140,255,0.15)
+    rgba(79,140,255,0.2)
   );
 
 }
 
 
-/* ITEM */
+/* ENTRY */
 
-.timeline-item {
+.timeline-entry {
 
-  display: contents;
+  position: relative;
+
+  margin-bottom: 30px;
 
 }
 
 
-/* MARKER */
+/* INNER */
 
-.timeline-marker {
+.timeline-entry-inner {
 
-  grid-column: 1;
+  position: relative;
 
-  width: 10px;
-  height: 10px;
+}
+
+
+/* ICON */
+
+.timeline-icon {
+
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  left: 14px;
 
   background: rgba(79,140,255,0.6);
 
   border-radius: 50%;
 
-  justify-self: center;
-
-  margin-top: 6px;
+  transform: translateX(-50%);
 
   z-index: 2;
 
 }
 
 
-/* DEGREE MARKER */
+/* DEGREE ICON */
 
-.timeline-item.degree .timeline-marker {
+.timeline-icon.degree {
 
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 
   background: var(--accent);
 
   box-shadow:
     0 0 0 4px rgba(79,140,255,0.15),
-    0 0 12px rgba(79,140,255,0.35);
+    0 0 14px rgba(79,140,255,0.35);
 
 }
 
 
 /* CONTENT */
 
-.timeline-content {
+.timeline-label {
 
-  grid-column: 2;
+  margin-left: 50px;
 
 }
 
 
 /* DEGREE CARD */
 
-.timeline-item.degree .timeline-content {
+.degree-card {
 
   background: rgba(79,140,255,0.05);
 
   border: 1px solid rgba(79,140,255,0.2);
 
-  padding: 20px 24px;
+  padding: 20px;
 
   border-radius: 14px;
 
 }
 
 
-/* HEADER */
-
-.timeline-header {
-
-  display: flex;
-
-  gap: 10px;
-
-  align-items: baseline;
-
-  flex-wrap: wrap;
-
-}
-
-
 /* TEXT */
 
-.timeline-date {
+.timeline-label h3 {
 
-  font-size: 14px;
-
-  font-weight: 500;
-
-  color: var(--accent);
-
-}
-
-.timeline-title {
+  font-size: 18px;
 
   font-weight: 600;
 
-}
-
-.timeline-item.degree .timeline-title {
-
-  font-size: 20px;
+  margin-bottom: 4px;
 
 }
 
-.timeline-item.cert .timeline-title {
+.timeline-date {
 
-  font-size: 16px;
+  color: var(--accent);
+
+  font-weight: 500;
+
+  margin-right: 10px;
 
 }
 
 .timeline-org {
 
-  font-size: 14px;
-
   color: var(--text-muted);
 
-  margin-top: 4px;
+  font-size: 14px;
 
 }
 
-.timeline-description {
-
-  font-size: 15px;
+.timeline-label p {
 
   margin-top: 8px;
 
