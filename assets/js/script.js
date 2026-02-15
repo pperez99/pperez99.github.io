@@ -34,3 +34,19 @@ function toggleCard(card) {
   card.classList.toggle("active");
 
 }
+
+function openModal(title, text, image) {
+
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("modalText").innerText = text;
+  document.getElementById("modalImage").src = image;
+
+  document.getElementById("projectModal").style.display = "flex";
+
+}
+
+function closeModal() {
+
+  document.getElementById("projectModal").style.display = "none";
+
+}

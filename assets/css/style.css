@@ -430,21 +430,18 @@ article.active {
 
 }
 
+
 /* BEYOND GRID */
 
 .beyond-grid {
 
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   gap: 25px;
 
   margin-top: 30px;
 
 }
-
-/* CARD */
 
 .beyond-card {
 
@@ -464,13 +461,11 @@ article.active {
 
 .beyond-card:hover {
 
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 
   border-color: var(--accent);
 
 }
-
-/* IMAGE */
 
 .beyond-img {
 
@@ -480,8 +475,6 @@ article.active {
   object-fit: cover;
 
 }
-
-/* CONTENT */
 
 .beyond-content {
 
@@ -501,8 +494,6 @@ article.active {
 
   font-size: var(--fs-small);
 
-  color: var(--text-secondary);
-
 }
 
 .beyond-tags {
@@ -514,22 +505,91 @@ article.active {
   opacity: 0.9;
 }
 
-/* HIDDEN CONTENT */
 
-.beyond-hidden {
+.beyond-button {
 
-  max-height: 0;
-
-  overflow: hidden;
-
-  transition: max-height 0.4s ease;
+  display: inline-block;
 
   margin-top: 10px;
 
+  color: var(--accent);
+
+  font-size: var(--fs-small);
+
 }
 
-.beyond-card.active .beyond-hidden {
 
-  max-height: 300px;
+/* MODAL */
+
+.modal-overlay {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.7);
+
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+
+}
+
+.modal-box {
+
+  background: var(--card-bg);
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+  max-width: 600px;
+
+  animation: fadeIn 0.3s ease;
+
+}
+
+.modal-image {
+
+  width: 100%;
+
+  border-radius: 12px;
+
+  margin-bottom: 20px;
+
+}
+
+.modal-close {
+
+  margin-top: 20px;
+
+  background: var(--accent);
+
+  color: white;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 }
