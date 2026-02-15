@@ -28,3 +28,9 @@ navigationLinks.forEach(link => {
   });
 
 });
+
+function toggleCard(card) {
+
+  card.classList.toggle("active");
+
+}
