@@ -367,29 +367,31 @@ article.active {
 /* TIMELINE PROFESIONAL FINAL */
 /* ========================= */
 
-.timeline-centered {
+/* TIMELINE BASE */
+
+.education-timeline {
 
   position: relative;
 
-  margin-left: 20px;
+  padding-left: 90px;
 
 }
 
 
 /* LINEA */
 
-.timeline-centered::before {
+.education-timeline::before {
 
   content: "";
 
   position: absolute;
 
+  left: 35px;
+
   top: 0;
   bottom: 0;
 
-  left: 20px;
-
-  width: 2px;
+  width: 3px;
 
   background: linear-gradient(
     to bottom,
@@ -400,42 +402,30 @@ article.active {
 }
 
 
-/* ENTRY */
+/* ITEM */
 
-.timeline-entry {
-
-  position: relative;
-
-  margin-bottom: 30px;
-
-}
-
-
-/* INNER */
-
-.timeline-entry-inner {
+.education-item {
 
   position: relative;
+
+  margin-bottom: 35px;
 
 }
 
 
 /* ICON */
 
-.timeline-icon {
+.education-icon {
 
   position: absolute;
 
-  width: 12px;
-  height: 12px;
+  left: 35px;
 
-  left: 14px;
-
-  background: rgba(79,140,255,0.6);
-
-  border-radius: 50%;
+  top: 20px;
 
   transform: translateX(-50%);
+
+  border-radius: 50%;
 
   z-index: 2;
 
@@ -444,57 +434,91 @@ article.active {
 
 /* DEGREE ICON */
 
-.timeline-icon.degree {
+.education-icon.degree {
 
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
 
   background: var(--accent);
 
   box-shadow:
-    0 0 0 4px rgba(79,140,255,0.15),
-    0 0 14px rgba(79,140,255,0.35);
+    0 0 0 6px rgba(79,140,255,0.15);
 
 }
 
 
-/* CONTENT */
+/* CERT ICON */
 
-.timeline-label {
+.education-icon.cert {
 
-  margin-left: 50px;
+  width: 12px;
+  height: 12px;
+
+  background: rgba(79,140,255,0.7);
 
 }
 
 
-/* DEGREE CARD */
+/* CARD (MASTER & DEGREE) */
 
-.degree-card {
+.education-card {
 
-  background: rgba(79,140,255,0.05);
+  margin-left: 60px;
 
-  border: 1px solid rgba(79,140,255,0.2);
+  background: rgba(79,140,255,0.06);
 
-  padding: 20px;
+  border: 1px solid rgba(79,140,255,0.25);
 
-  border-radius: 14px;
+  padding: 20px 25px;
+
+  border-radius: 10px;
+
+  position: relative;
+
+}
+
+
+/* CARD POINTER */
+
+.education-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: -10px;
+
+  top: 20px;
+
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right: 10px solid rgba(79,140,255,0.25);
+
+}
+
+
+/* INLINE CERT */
+
+.education-inline {
+
+  margin-left: 60px;
 
 }
 
 
 /* TEXT */
 
-.timeline-label h3 {
+.education-title {
 
-  font-size: 18px;
+  font-size: 17px;
 
-  font-weight: 600;
-
-  margin-bottom: 4px;
+  font-weight: 500;
 
 }
 
-.timeline-date {
+
+.education-date {
 
   color: var(--accent);
 
@@ -504,19 +528,23 @@ article.active {
 
 }
 
-.timeline-org {
 
-  color: var(--text-muted);
+.education-org {
 
   font-size: 14px;
 
+  color: var(--text-muted);
+
+  margin-top: 4px;
+
 }
 
-.timeline-label p {
 
-  margin-top: 8px;
+.education-card h3 {
 
-  color: var(--text-secondary);
+  margin: 0;
+
+  font-size: 20px;
 
 }
 
