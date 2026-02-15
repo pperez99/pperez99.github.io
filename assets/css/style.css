@@ -372,7 +372,11 @@ article.active {
 
   position: relative;
 
-  padding-left: 60px;
+  display: grid;
+
+  grid-template-columns: 40px 1fr;
+
+  row-gap: 36px;
 
 }
 
@@ -385,14 +389,13 @@ article.active {
 
   position: absolute;
 
-  left: 20px;      /* ← POSICION FIJA DEL EJE */
+  left: 20px;
 
   top: 0;
 
   bottom: 0;
 
   width: 2px;
-
 
   background: linear-gradient(
     to bottom,
@@ -403,37 +406,40 @@ article.active {
 }
 
 
-/* ITEM */
+/* ITEM usa GRID */
 
 .timeline-item {
 
-  position: relative;
-
-  margin-bottom: 35px;
+  display: contents;
 
 }
 
 
-/* MARKER BASE — PERFECTAMENTE ALINEADO */
+/* MARKER */
 
 .timeline-marker {
 
-  position: absolute;
+  grid-column: 1;
 
-  left: 20px;          /* mismo valor que la linea */
+  justify-self: center;
 
-  top: 14px;
+  align-self: start;
 
-  transform: translateX(-50%);  /* ← centra SIEMPRE sin importar tamaño */
+  margin-top: 6px;
+
+  width: 10px;
+  height: 10px;
 
   border-radius: 50%;
+
+  background: rgba(79,140,255,0.6);
 
   z-index: 2;
 
 }
 
 
-/* MARKER DEGREE */
+/* DEGREE MARKER */
 
 .timeline-item.degree .timeline-marker {
 
@@ -449,23 +455,11 @@ article.active {
 }
 
 
-/* MARKER CERT */
-
-.timeline-item.cert .timeline-marker {
-
-  width: 10px;
-  height: 10px;
-
-  background: rgba(79,140,255,0.6);
-
-}
-
-
 /* CONTENT */
 
 .timeline-content {
 
-  margin-left: 25px;
+  grid-column: 2;
 
 }
 
@@ -485,7 +479,7 @@ article.active {
 }
 
 
-/* HEADER INLINE */
+/* HEADER */
 
 .timeline-header {
 
@@ -512,6 +506,7 @@ article.active {
 
 }
 
+
 .timeline-title {
 
   font-weight: 600;
@@ -520,11 +515,13 @@ article.active {
 
 }
 
+
 .timeline-item.degree .timeline-title {
 
   font-size: 20px;
 
 }
+
 
 .timeline-item.cert .timeline-title {
 
@@ -532,13 +529,17 @@ article.active {
 
 }
 
+
 .timeline-org {
 
   font-size: 14px;
 
   color: var(--text-muted);
 
+  margin-top: 4px;
+
 }
+
 
 .timeline-description {
 
