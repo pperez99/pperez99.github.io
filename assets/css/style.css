@@ -371,12 +371,14 @@ article.active {
 
   position: relative;
 
-  padding-left: 50px;
+  padding-left: 70px;   /* espacio para linea y markers */
 
 }
 
 
+/* ========================= */
 /* LINEA VERTICAL */
+/* ========================= */
 
 .timeline::before {
 
@@ -384,7 +386,7 @@ article.active {
 
   position: absolute;
 
-  left: 18px;
+  left: 35px;           /* centro exacto del eje */
 
   top: 0;
 
@@ -401,7 +403,9 @@ article.active {
 }
 
 
+/* ========================= */
 /* ITEM BASE */
+/* ========================= */
 
 .timeline-item {
 
@@ -412,15 +416,19 @@ article.active {
 }
 
 
-/* MARKER BASE (alineado perfectamente) */
+/* ========================= */
+/* MARKER BASE */
+/* ========================= */
 
 .timeline-marker {
 
   position: absolute;
 
-  left: -42px;
+  left: 35px;           /* MISMO CENTRO QUE LA LINEA */
 
   top: 8px;
+
+  transform: translateX(-50%);   /* centra el circulo perfectamente */
 
   border-radius: 50%;
 
@@ -469,7 +477,7 @@ article.active {
 
 
 /* ========================= */
-/* CERTIFICATIONS (COMPACTAS) */
+/* CERTIFICATIONS */
 /* ========================= */
 
 .timeline-item.cert .timeline-marker {
@@ -489,7 +497,9 @@ article.active {
 }
 
 
-/* Header inline (fecha + titulo en una linea) */
+/* ========================= */
+/* HEADER INLINE */
+/* ========================= */
 
 .timeline-header {
 
@@ -580,7 +590,7 @@ article.active {
 
 
 /* ========================= */
-/* LAST ITEM SPACING */
+/* LAST ITEM */
 /* ========================= */
 
 .timeline-item:last-child {
