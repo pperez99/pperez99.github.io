@@ -367,11 +367,14 @@ article.active {
 /* TIMELINE PROFESIONAL FINAL */
 /* ========================= */
 
+
 .timeline {
+
+  --axis: 35px;              /* ← EL EJE CENTRAL (SOLO CAMBIAS ESTO SI QUIERES AJUSTAR) */
 
   position: relative;
 
-  padding-left: 70px;   /* espacio para linea y markers */
+  padding-left: 80px;        /* espacio para markers y contenido */
 
 }
 
@@ -386,13 +389,15 @@ article.active {
 
   position: absolute;
 
-  left: 35px;           /* centro exacto del eje */
+  left: var(--axis);         /* ← usa la variable */
 
   top: 0;
 
   width: 2px;
 
   height: 100%;
+
+  transform: translateX(-50%);   /* centra la linea EXACTAMENTE */
 
   background: linear-gradient(
     to bottom,
@@ -424,11 +429,11 @@ article.active {
 
   position: absolute;
 
-  left: 35px;           /* MISMO CENTRO QUE LA LINEA */
+  left: var(--axis);         /* ← MISMA VARIABLE */
 
-  top: 8px;
+  top: 10px;
 
-  transform: translateX(-50%);   /* centra el circulo perfectamente */
+  transform: translate(-50%, -50%);   /* centra PERFECTAMENTE */
 
   border-radius: 50%;
 
