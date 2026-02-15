@@ -364,20 +364,15 @@ article.active {
 
 
 /* ========================= */
-/* TIMELINE PROFESIONAL FIX  */
+/* TIMELINE PROFESIONAL  */
 /* ========================= */
 
 .timeline {
 
   position: relative;
-
-  margin-top: 40px;
-
-  padding-left: 40px;
+  padding-left: 50px;
 
 }
-
-/* LÍNEA VERTICAL */
 
 .timeline::before {
 
@@ -385,7 +380,7 @@ article.active {
 
   position: absolute;
 
-  left: 12px;      /* Ajuste clave */
+  left: 8px;
 
   top: 0;
 
@@ -393,87 +388,77 @@ article.active {
 
   height: 100%;
 
-  background: rgba(79,140,255,0.4); /* Más visible */
-
-  z-index: 0;      /* Asegura que esté detrás */
-
-}
-
-/* ITEM */
-
-.timeline-item {
-
-  position: relative;
-
-  margin-bottom: 45px;
+  background: linear-gradient(
+    to bottom,
+    var(--accent),
+    rgba(79,140,255,0.15)
+  );
 
 }
 
-/* CÍRCULO */
+
+/* MARKER BASE */
 
 .timeline-marker {
 
   position: absolute;
 
-  left: -40px;
+  left: -50px;
 
   top: 8px;
 
-  width: 14px;
-
-  height: 14px;
-
   border-radius: 50%;
+
+}
+
+
+/* DEGREE MARKER */
+
+.timeline-item.degree .timeline-marker {
+
+  width: 16px;
+  height: 16px;
 
   background: var(--accent);
 
-  box-shadow: 0 0 0 4px rgba(79,140,255,0.2);
-
-  z-index: 2; /* Encima de la línea */
-
-}
-
-/* Texto */
-
-.timeline-date {
-
-  font-size: 14px;
-
-  font-weight: 500;
-
-  color: var(--accent);
+  box-shadow:
+    0 0 0 4px rgba(79,140,255,0.15);
 
 }
 
-.timeline-title {
 
-  font-size: 20px;
+/* CERT MARKER */
 
-  font-weight: 600;
+.timeline-item.cert .timeline-marker {
 
-  color: var(--text-primary);
+  width: 10px;
+  height: 10px;
 
-  margin-top: 6px;
-
-}
-
-.timeline-org {
-
-  font-size: 14px;
-
-  color: var(--text-muted);
-
-  margin-bottom: 8px;
+  background: rgba(79,140,255,0.6);
 
 }
 
-.timeline-description {
 
-  font-size: 15px;
+/* DEGREE BOX DESTACADO */
 
-  color: var(--text-secondary);
+.timeline-item.degree .timeline-content {
 
-  line-height: 1.6;
+  background: rgba(79,140,255,0.05);
+
+  border: 1px solid rgba(79,140,255,0.2);
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+}
+
+
+/* CERT NORMAL */
+
+.timeline-item.cert .timeline-content {
+
+  padding: 10px 0;
 
 }
 
