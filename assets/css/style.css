@@ -364,15 +364,19 @@ article.active {
 
 
 /* ========================= */
-/* TIMELINE PROFESIONAL  */
+/* TIMELINE PROFESIONAL FINAL */
 /* ========================= */
 
 .timeline {
 
   position: relative;
-  padding-left: 50px;
+
+  padding-left: 60px;
 
 }
+
+
+/* LINEA VERTICAL */
 
 .timeline::before {
 
@@ -380,7 +384,7 @@ article.active {
 
   position: absolute;
 
-  left: 8px;
+  left: 20px;   /* eje exacto de la linea */
 
   top: 0;
 
@@ -397,22 +401,32 @@ article.active {
 }
 
 
+/* ITEM */
+
+.timeline-item {
+
+  position: relative;   /* CRÍTICO */
+  margin-bottom: 35px;
+
+}
+
+
 /* MARKER BASE */
 
 .timeline-marker {
 
   position: absolute;
 
-  left: -50px;
+  left: -40px;   /* alineado con la linea */
 
-  top: 8px;
+  top: 6px;
 
   border-radius: 50%;
 
 }
 
 
-/* DEGREE MARKER */
+/* DEGREE MARKER (GRANDE) */
 
 .timeline-item.degree .timeline-marker {
 
@@ -422,12 +436,13 @@ article.active {
   background: var(--accent);
 
   box-shadow:
-    0 0 0 4px rgba(79,140,255,0.15);
+    0 0 0 4px rgba(79,140,255,0.15),
+    0 0 12px rgba(79,140,255,0.4);
 
 }
 
 
-/* CERT MARKER */
+/* CERT MARKER (PEQUEÑO) */
 
 .timeline-item.cert .timeline-marker {
 
@@ -439,26 +454,89 @@ article.active {
 }
 
 
-/* DEGREE BOX DESTACADO */
+/* CONTENIDO BASE */
 
-.timeline-item.degree .timeline-content {
+.timeline-content {
 
-  background: rgba(79,140,255,0.05);
-
-  border: 1px solid rgba(79,140,255,0.2);
-
-  padding: 20px;
-
-  border-radius: 12px;
+  margin-left: 10px;
 
 }
 
 
-/* CERT NORMAL */
+/* DEGREE DESTACADO (RECUADRO) */
+
+.timeline-item.degree .timeline-content {
+
+  background: rgba(79,140,255,0.06);
+
+  border: 1px solid rgba(79,140,255,0.25);
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  transition: 0.25s ease;
+
+}
+
+
+/* HOVER PROFESIONAL */
+
+.timeline-item.degree .timeline-content:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+
+}
+
+
+/* CERT SIMPLE */
 
 .timeline-item.cert .timeline-content {
 
-  padding: 10px 0;
+  padding: 8px 0;
+
+}
+
+
+/* TEXTOS */
+
+.timeline-date {
+
+  color: var(--accent);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+}
+
+.timeline-title {
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  margin: 4px 0;
+
+}
+
+.timeline-org {
+
+  color: var(--text-muted);
+
+  margin-bottom: 6px;
+
+}
+
+.timeline-description {
+
+  color: var(--text-secondary);
+
+  line-height: 1.6;
 
 }
 
