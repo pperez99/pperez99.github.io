@@ -993,3 +993,147 @@ article.active {
   }
 
 }
+
+/* COMPANY CARD */
+.company-card {
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
+
+  padding: 24px;
+
+  margin-bottom: 30px;
+
+  transition: var(--transition);
+
+}
+
+.company-card:hover {
+
+  border-color: var(--accent);
+
+}
+
+.company-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 6px;
+
+}
+
+.company-role {
+
+  color: var(--text-primary);
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+}
+
+.company-date {
+
+  font-size: 12px;
+
+  color: var(--accent);
+
+}
+
+.company-name {
+
+  font-size: 14px;
+
+  color: var(--text-muted);
+
+  margin-bottom: 10px;
+
+}
+
+.company-description {
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+}
+
+.section-subtitle {
+
+  font-size: 14px;
+
+  color: var(--text-primary);
+
+  margin-bottom: 15px;
+
+}
+
+.projects-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+}
+.project-card {
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border);
+
+  border-radius: 16px;
+
+  padding: 20px;
+
+  transition: var(--transition);
+
+}
+
+.project-card:hover {
+
+  border-color: var(--accent);
+
+  transform: translateY(-4px);
+
+}
+
+.project-title {
+
+  color: var(--text-primary);
+
+  margin-bottom: 8px;
+
+}
+
+.project-text {
+
+  font-size: 13px;
+
+  margin-bottom: 10px;
+
+}
+
+.project-impact {
+
+  font-size: 12px;
+
+  padding-left: 18px;
+
+  color: var(--text-secondary);
+
+}
+
+.project-impact li {
+
+  margin-bottom: 4px;
+
+}
