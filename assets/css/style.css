@@ -1221,17 +1221,57 @@ article.active {
 
 .project-impact {
 
-  font-size: 12px;
+  font-size: 13px;
 
   padding-left: 18px;
 
+  margin-bottom: 14px;
+
   color: var(--text-secondary);
+
+  line-height: 1.5;
 
 }
 
 .project-impact li {
 
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+
+}
+
+.tech-tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-top: 10px;
+
+}
+
+.tech-tags span {
+
+  font-size: 11px;
+
+  padding: 4px 8px;
+
+  border-radius: 8px;
+
+  background: rgba(79,140,255,0.12);
+
+  border: 1px solid rgba(79,140,255,0.25);
+
+  color: var(--text-primary);
+
+  transition: var(--transition);
+
+}
+
+.project-card:hover .tech-tags span {
+
+  border-color: var(--accent);
 
 }
 
