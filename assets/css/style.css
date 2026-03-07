@@ -33,10 +33,10 @@
 
   --font: 'Poppins', sans-serif;
 
-  --fs-title: 36px;
-  --fs-subtitle: 22px;
-  --fs-body: 16px;
-  --fs-small: 13px;
+  --fs-title: 30px;
+  --fs-subtitle: 20px;
+  --fs-body: 15px;
+  --fs-small: 12px;
 
   /* SHADOW */
 
@@ -599,7 +599,7 @@ article.active {
 .timeline-entry {
 
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
 }
 
@@ -659,7 +659,7 @@ article.active {
 
   margin-left: 70px;
 
-  padding: 18px 22px;
+  padding: 14px 18px;
 
   border-radius: 12px;
 
@@ -702,7 +702,7 @@ article.active {
 
   margin: 0;
 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 
 }
@@ -729,8 +729,9 @@ article.active {
 
 .timeline-label p {
 
-  margin-top: 8px;
-
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.6;
   color: var(--text-secondary);
 
 }
