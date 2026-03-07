@@ -947,11 +947,29 @@ article.active {
 
 #modalText ul {
 
-  margin: 12px 0 16px 20px;
+  list-style-type: disc;
 
-  padding-left: 10px;
+  margin: 16px 0 18px 22px;
 
-  list-style: disc;
+  padding-left: 18px;
+
+}
+
+#modalText li {
+
+  display: list-item;
+
+  margin-bottom: 8px;
+
+  line-height: 1.6;
+
+  color: var(--text-secondary);
+
+}
+
+#modalText li::marker {
+
+  color: var(--accent);
 
 }
 
@@ -960,23 +978,6 @@ article.active {
   color: var(--text-primary);
 
 }
-
-#modalText li {
-
-  margin-bottom: 6px;
-
-  line-height: 1.6;
-
-  color: var(--text-secondary);
-
-}
-
-#modalText ul li::marker {
-
-  color: var(--accent);
-
-}
-
 
 .modal-close {
 
