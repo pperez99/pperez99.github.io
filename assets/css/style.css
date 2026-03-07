@@ -998,22 +998,36 @@ article.active {
 .company-card {
 
   background: var(--card-bg);
-
   border: 1px solid var(--border);
-
   border-radius: 18px;
-
-  padding: 24px;
-
+  padding: 28px;
   margin-bottom: 30px;
-
   transition: var(--transition);
+  box-shadow: var(--shadow-soft);
+  position: relative;
 
 }
 
 .company-card:hover {
 
   border-color: var(--accent);
+
+}
+
+.company-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: 18px;
+
+  background:
+    radial-gradient(circle at 20% 0%, rgba(79,140,255,0.08), transparent 40%);
+
+  pointer-events: none;
 
 }
 
@@ -1072,6 +1086,30 @@ article.active {
   color: var(--text-primary);
 
   margin-bottom: 15px;
+
+}
+
+.projects-section {
+
+  margin-top: 25px;
+
+}
+.projects-section::before {
+
+  content: "";
+
+  display: block;
+
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(79,140,255,0.25),
+    transparent
+  );
+
+  margin-bottom: 20px;
 
 }
 
@@ -1135,5 +1173,13 @@ article.active {
 .project-impact li {
 
   margin-bottom: 4px;
+
+}
+
+@media (max-width: 900px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 
 }
