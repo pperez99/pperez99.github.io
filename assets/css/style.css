@@ -82,7 +82,7 @@ button {
 main {
 
   max-width: 1200px;
-  margin: 90px auto;
+  margin: 50px auto;
 
   display: flex;
   gap: 60px;
@@ -399,7 +399,7 @@ a {
 
 .navbar {
 
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 
 }
 
