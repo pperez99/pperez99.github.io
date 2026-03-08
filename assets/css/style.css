@@ -64,6 +64,25 @@ body {
 
 }
 
+body::before{
+
+  content:"";
+
+  position:fixed;
+
+  inset:0;
+
+  background-image:
+    radial-gradient(rgba(79,140,255,0.08) 1px, transparent 1px);
+
+  background-size:40px 40px;
+
+  opacity:0.15;
+
+  pointer-events:none;
+
+}
+
 a { text-decoration: none; }
 li { list-style: none; }
 
@@ -85,7 +104,7 @@ main {
   margin: 25px auto;
 
   display: flex;
-  gap: 60px;
+  gap: 80px;
 
   align-items: flex-start;
 
@@ -101,41 +120,48 @@ main {
   position: sticky;
   top: 90px;
 
-  padding: 45px 30px;
+  padding: 20px 10px;
 
-  border-radius: 28px;
-
-  /* glass effect */
-  background: rgba(26, 34, 50, 0.65);
-
-  backdrop-filter: blur(18px);
-
-  border: 1px solid rgba(79,140,255,0.18);
-
-  box-shadow:
-    0 20px 60px rgba(0,0,0,0.45),
-    inset 0 1px 0 rgba(255,255,255,0.04);
-
-  transition: var(--transition);
+  background: none;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
 
 }
 
-/* glow exterior sutil */
-
-.sidebar::after {
+.sidebar::before {
 
   content: "";
 
   position: absolute;
 
-  inset: 0;
+  right: -30px;
+  top: 0;
 
-  border-radius: 28px;
+  width: 1px;
+  height: 100%;
 
-  box-shadow:
-    0 0 80px rgba(79,140,255,0.12);
+  background: linear-gradient(
+    transparent,
+    rgba(79,140,255,0.35),
+    transparent
+  );
 
-  pointer-events: none;
+}
+
+.intro{
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  color: var(--text-muted);
+
+  text-align: center;
+
+  margin: 14px auto 0;
+
+  max-width: 240px;
 
 }
 
@@ -152,12 +178,13 @@ main {
 .avatar-box img {
 
   width: 100%;
-
   border-radius: 22px;
 
   position: relative;
-
   z-index: 2;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35);
 
 }
 
@@ -169,7 +196,7 @@ main {
 
   position: absolute;
 
-  inset: -18px;
+  inset: -25px;
 
   background: radial-gradient(
     circle,
@@ -177,7 +204,7 @@ main {
     transparent 70%
   );
 
-  filter: blur(25px);
+  filter: blur(30px);
 
   z-index: 1;
 
@@ -232,10 +259,9 @@ main {
 .separator {
 
   width: 60%;
-
   height: 1px;
 
-  margin: 25px auto;
+  margin: 22px auto;
 
   background: linear-gradient(
     to right,
