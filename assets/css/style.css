@@ -719,7 +719,7 @@ article.active {
 
 .timeline-label .org {
 
-  margin-top: 2px;
+  margin-top: 1px;
 
   color: var(--text-muted);
 
@@ -729,7 +729,7 @@ article.active {
 
 .timeline-label p {
 
-  margin-top: 6px;
+  margin-top: 4px;
   font-size: 13px;
   line-height: 1.6;
   color: var(--text-secondary);
