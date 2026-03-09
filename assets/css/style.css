@@ -152,16 +152,19 @@ main {
 .intro{
 
   font-size: 13px;
-
-  line-height: 1.6;
+  line-height: 1.7;
 
   color: var(--text-muted);
 
   text-align: center;
 
-  margin: 14px auto 0;
+  margin: 18px auto;
 
-  max-width: 240px;
+  max-width: 220px;
+
+  font-style: italic;
+
+  opacity: 0.9;
 
 }
 
@@ -171,7 +174,7 @@ main {
 
   width: 140px;
 
-  margin: 0 auto 25px;
+  margin: 0 auto 18px;
 
 }
 
@@ -196,15 +199,16 @@ main {
 
   position: absolute;
 
-  inset: -25px;
+  inset: -30px;
 
   background: radial-gradient(
     circle,
-    rgba(79,140,255,0.35),
+    rgba(79,140,255,0.55) 0%,
+    rgba(79,140,255,0.25) 40%,
     transparent 70%
   );
 
-  filter: blur(30px);
+  filter: blur(35px);
 
   z-index: 1;
 
@@ -212,13 +216,13 @@ main {
 
 .name {
 
-  font-size: 26px;
+  font-size: 28px;
 
-  font-weight: 600;
+  font-weight: 500;
 
   text-align: center;
 
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 
   letter-spacing: 0.4px;
 
