@@ -160,7 +160,7 @@ main {
 
   margin: 18px auto;
 
-  max-width: 220px;
+  max-width: 260px;
 
   font-style: italic;
 
@@ -493,13 +493,13 @@ article.active {
 
 .article-title {
 
-  font-size: var(--fs-title);
+  font-size: 18px;
 
-  font-weight: 600;
+  letter-spacing: 0.5px;
 
-  color: var(--text-primary);
+  color: var(--text-secondary);
 
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 
 }
 
