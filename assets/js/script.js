@@ -54,3 +54,47 @@ function closeModal() {
   document.getElementById("projectModal").style.display = "none";
 
 }
+
+const downloadLinks = document.querySelectorAll('.download-link');
+
+downloadLinks.forEach(link => {
+
+  link.addEventListener('click', async function (event) {
+
+    event.preventDefault();
+
+    const fileUrl = this.href;
+    const fileName = this.dataset.download || this.getAttribute('download');
+
+    try {
+
+      const response = await fetch(fileUrl);
+      const arrayBuffer = await response.arrayBuffer();
+      const binary = Array.from(new Uint8Array(arrayBuffer), byte => String.fromCharCode(byte)).join('');
+      const base64 = btoa(binary);
+      const downloadUrl = `data:application/octet-stream;base64,${base64}`;
+
+      const tempLink = document.createElement('a');
+      tempLink.href = downloadUrl;
+      tempLink.download = fileName;
+      tempLink.style.display = 'none';
+
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      tempLink.remove();
+
+    } catch (error) {
+      const fallbackLink = document.createElement('a');
+      fallbackLink.href = fileUrl;
+      fallbackLink.download = fileName;
+      fallbackLink.target = '_self';
+      fallbackLink.rel = 'noopener';
+      fallbackLink.style.display = 'none';
+      document.body.appendChild(fallbackLink);
+      fallbackLink.click();
+      fallbackLink.remove();
+    }
+
+  });
+
+});
