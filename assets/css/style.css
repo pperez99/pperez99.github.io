@@ -586,6 +586,15 @@ article.active {
 
 }
 
+.service-visual img {
+
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+
+}
+
 .service-item-wide {
 
   width: 100%;
